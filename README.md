@@ -83,3 +83,19 @@ Repeat steps 1-4 above and
 > ALSO NOTE: All created mock endpoints will be available using the mock server, NOT the webpack
 > dev server. You will have to go to `http://localhost:9000` instead of `http://localhost:9100` 
 > to test the mock endpoints created
+
+
+## Shopify Queue Testing
+
+If you're developing a system where you need to setup a test environment for Shopify's throttle queue (like I've had to do while developing nebula), you can easily do so with this server. I'll write up a quick guide here on the setup process for doing so.
+
+### Prerequisites
+
+Make sure you've gone through the `Install and Run` section of this README first. After doing so, navigate to the [dashboard](http://localhost:9000/__dashboard). Here we can begin to setup the required endpoints needed in order to test a proper queue response from Shopify.
+
+#### /checkout endpoint
+
+If you're at the dashboard homepage, navigate to the [endpoints page](http://localhost:9000/__dashboard/endpoints). Click on [new](http://localhost:9000/__dashboard/endpoints/new) to begin setting up the `/checkout` endpoint. The endpoint should look like the screenshot below.
+
+
+
