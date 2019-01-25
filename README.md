@@ -125,4 +125,4 @@ At this point, your task should be stuck in a queue state, right? Right. So what
 
 Basically, we want to change the response status code to either a `302` || `202` and make sure that both cases are handled properly. You will have to edit the body & headers as well when editing the endpoint. 
 
-![/checkout finished](_lib/checkout_poll_finished.png?raw=true)
+![/checkout finished](_lib/checkout_poll_finish.png?raw=true)
