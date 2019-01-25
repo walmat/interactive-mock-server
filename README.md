@@ -121,8 +121,10 @@ Save the endpoint.
 
 ### /checkout/poll (finished) endpoint
 
-At this point, your task should be stuck in a queue state, right? Right. So what happens when Shopify let's us out? Let's change the previous endpoint to trigger that. Edit the `checkout/poll` endpoint to look like the following screenshot. Note: your queue handler should handle the queue response and properly kick you out to the next state once we change this endpoint, so be fast when changing between screens so you can see it!
+At this point, your task should be stuck in a queue state, right? Right. So what happens when Shopify let's us out? Let's change the previous endpoint to trigger that. Edit the `checkout/poll` endpoint to look like the following screenshot.
 
 Basically, we want to change the response status code to either a `302` || `202` and make sure that both cases are handled properly. You will have to edit the body & headers as well when editing the endpoint. 
 
 ![/checkout finished](_lib/checkout_poll_finish.png?raw=true)
+
+After you've changed the endpoint, your queue handler should handle the queue response and properly kick you out to the next state. If you need anymore help testing queues, or help setting up the test environment, message me on discord @orion#0001. Hope this helps all you Shopify botters out there. :)
