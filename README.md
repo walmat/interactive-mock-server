@@ -97,7 +97,7 @@ Make sure you've gone through the [Install and Run](https://github.com/walmat/in
 
 If you're at the dashboard homepage, navigate to the [endpoints page](http://localhost:9000/__dashboard/endpoints). Click on [new](http://localhost:9000/__dashboard/endpoints/new) to begin setting up the `/checkout` endpoint. The endpoint should look like the screenshot below.
 
-![/checkout endpoint](checkout_poll.png?raw=true)
+![/checkout endpoint](_lib/checkout_poll.png?raw=true)
 
 Save the endpoint and head back to [new](http://localhost:9000/__dashboard/endpoints/new) to create the next endpoint
 
@@ -115,7 +115,7 @@ where LINKHERE contains the checkout session that was created. So, to recap, we 
 
 Anyway, hopefully that's clear enough. Let's setup the endpoint. It should look like the following screenshot.
 
-![/checkout waiting](checkout_poll_waiting.png?raw=true)
+![/checkout waiting](_lib/checkout_poll_waiting.png?raw=true)
 
 Save the endpoint.
 
@@ -125,4 +125,4 @@ At this point, your task should be stuck in a queue state, right? Right. So what
 
 Basically, we want to change the response status code to either a `302` || `202` and make sure that both cases are handled properly. You will have to edit the body & headers as well when editing the endpoint. 
 
-![/checkout finished](checkout_poll_finished.png?raw=true)
+![/checkout finished](_lib/checkout_poll_finished.png?raw=true)
